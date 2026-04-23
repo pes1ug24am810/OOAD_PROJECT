@@ -2,8 +2,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-// IMPORTANT: You will need to import the actual Entity classes from the other team's JAR.
-// Ask them for the exact package name. It will look something like this:
 // import com.otherteam.hrms.entity.Employee;
 
 public class EmployeeSelfServiceApp {
@@ -28,7 +26,7 @@ public class EmployeeSelfServiceApp {
             // ---------------------------------------------------------
             // 3. FETCH YOUR DATA HERE
             // ---------------------------------------------------------
-            /* Example of how you will get the data once you know the class name:
+            /* Example of how we will get the data once you know the class name:
                
                List<Employee> employees = session.createQuery("from Employee", Employee.class).getResultList();
                
