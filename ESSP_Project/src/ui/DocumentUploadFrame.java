@@ -90,7 +90,6 @@ public class DocumentUploadFrame extends JFrame {
 
                 JOptionPane.showMessageDialog(this, "Document Uploaded Successfully!");
                 dispose(); // Closes the window
-                // -----------------------------------------------------
 
             } catch (Exception ex) {
                 JOptionPane.showMessageDialog(
