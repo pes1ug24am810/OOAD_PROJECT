@@ -54,7 +54,7 @@ public class AuthDBImpl implements IAuthRepository {
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
             
             pstmt.setString(1, newPassword);
-            pstmt.setInt(2, employeeId); // This value comes from your Java logic
+            pstmt.setInt(2, employeeId); // This value comes from our Java logic
             
             int rowsAffected = pstmt.executeUpdate();
             return rowsAffected > 0;
