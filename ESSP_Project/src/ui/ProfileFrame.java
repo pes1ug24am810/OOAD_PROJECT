@@ -54,7 +54,7 @@ public class ProfileFrame extends JFrame {
         } else {
             // --- EMERGENCY PRESENTATION BYPASS ---
             // If the JAR connects to the "Ghost Database", we intercept the null error 
-            // and load Alice's data so your UI presentation goes flawlessly!
+            // and load Alice's data so our UI presentation goes flawlessly!
             System.out.println("--- MOCK PROFILE DATA LOADED ---");
             
             add(new JLabel("  Employee ID:")); add(new JLabel("EMP001"));
