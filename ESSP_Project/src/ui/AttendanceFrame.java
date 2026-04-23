@@ -53,7 +53,7 @@ public class AttendanceFrame extends JFrame {
         scroll.setBounds(50, 180, 380, 150);
         add(scroll);
 
-        // 🔥 Button Action
+        // Button Action
         loadBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
