@@ -1,4 +1,4 @@
-package patterns.structural; // Matches your folder path in the screenshot
+package patterns.structural; 
 
 import model.*;
 import service.interfaces.*;
@@ -15,7 +15,7 @@ public class ESSPFacade {
     private IPayrollService payrollService;
     private IAttendanceService attendanceService;
 
-    // This is the constructor you wrote, now correctly wrapped in a class
+    // This is the constructor we wrote, now correctly wrapped in a class
     public ESSPFacade() {
         authService = ServiceFactory.getAuthService();
         employeeService = ServiceFactory.getEmployeeService();
@@ -26,7 +26,7 @@ public class ESSPFacade {
         attendanceService = ServiceFactory.getAttendanceService();
     }
 
-    // --- Added Methods for UI support ---
+    // Added Methods for UI support
 
     public boolean updateContact(int empId, String phone, String email) throws RequestNotFoundException {
         return employeeService.updateContact(empId, phone, email);
@@ -44,7 +44,7 @@ public class ESSPFacade {
         return leaveService.viewLeaveHistory(empId);
     }
 
-    // --- Standard Service Methods ---
+    // Standard Service Methods
     
     public boolean login(String username, String password) throws InvalidCredentialsException, UnauthorizedAccessException {
         return authService.login(username, password);
