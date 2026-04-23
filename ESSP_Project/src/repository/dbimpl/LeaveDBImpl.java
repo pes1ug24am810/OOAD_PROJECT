@@ -115,7 +115,7 @@ public class LeaveDBImpl implements ILeaveRepository {
     private Leave mapResultSetToLeave(ResultSet rs) throws SQLException {
         Leave l = new Leave();
         l.setLeaveId(rs.getInt("leave_id"));
-        l.setEmployeeId(rs.getInt("emp_id")); // Mapping emp_id to your model
+        l.setEmployeeId(rs.getInt("emp_id")); // Mapping emp_id to our model
         l.setLeaveType(rs.getString("leave_type"));
         l.setStartDate(rs.getString("start_date"));
         l.setEndDate(rs.getString("end_date"));
