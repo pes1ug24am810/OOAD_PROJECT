@@ -48,7 +48,7 @@ public class PayrollFrame extends JFrame {
                     throw new Exception("Enter month.");
                 }
                 
-                // Explicitly use 'this.facade' to tell the IDE it is used [cite: 1933]
+                // Explicitly use 'this.facade' 
                 Payroll p = this.facade.viewPayslip(this.employeeId, month);
                 
                 String data = "Month: " + p.getPayslipMonth() + "\n" +
