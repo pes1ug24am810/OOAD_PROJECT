@@ -65,7 +65,7 @@ public class LeaveApplyFrame extends JFrame {
         submitButton.setBounds(140, 280, 150, 30);
         add(submitButton);
 
-        // Your updated Action Listener!
+        // our updated Action Listener!
         submitButton.addActionListener(e -> {
             try {
                 // Grab the data the user typed/selected
@@ -73,14 +73,14 @@ public class LeaveApplyFrame extends JFrame {
                 String start = startDateField.getText().trim();
                 String end = endDateField.getText().trim();
                 
-                // (Optional: You can append the reason to the type string or handle it in your service if needed)
+                // (Optional: We can append the reason to the type string or handle it in your service if needed)
                 String reason = reasonArea.getText().trim(); 
 
                 if (start.isEmpty() || end.isEmpty()) {
                     throw new Exception("Start Date and End Date are required.");
                 }
 
-                // Call your newly updated service! 
+                // Calling our newly updated service! 
                 boolean success = leaveService.applyForLeave(this.employeeId, type, start, end);
 
                 if (success) {
