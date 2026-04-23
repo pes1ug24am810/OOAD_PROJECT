@@ -74,7 +74,7 @@ public class AttendanceDBImpl implements IAttendanceRepository {
 
     private Attendance mapResultSetToAttendance(ResultSet rs) throws SQLException {
         return new Attendance(
-            rs.getInt("attendance_id"), // Verify if this is record_id in your viewer
+            rs.getInt("attendance_id"), // Verify if this is record_id in our viewer
             rs.getInt("emp_id"),        // Matches db column
             rs.getString("check_in"),
             rs.getString("check_out"),
