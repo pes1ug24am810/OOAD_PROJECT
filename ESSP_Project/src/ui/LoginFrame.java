@@ -66,7 +66,7 @@ public class LoginFrame extends JFrame {
     }
 
     public static void main(String[] args) {
-        // Entry point for your application
+        // Entry point for our application
         SwingUtilities.invokeLater(() -> new LoginFrame().setVisible(true));
     }
 }
