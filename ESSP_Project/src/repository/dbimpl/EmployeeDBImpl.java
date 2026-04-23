@@ -132,12 +132,12 @@ public class EmployeeDBImpl implements IEmployeeRepository {
         // Adjusted column labels to match hrms.db schema
         return new Employee(
             rs.getInt("emp_id"),            // Changed from employee_id 
-            rs.getString("name"),          // [cite: 1312]
-            rs.getString("email"),         // 
-            rs.getString("phone"),         // [cite: 1312]
-            rs.getString("address"),       // 
-            rs.getString("department"),    // 
-            rs.getString("designation"),   // 
+            rs.getString("name"),          
+            rs.getString("email"),         
+            rs.getString("phone"),         
+            rs.getString("address"),       
+            rs.getString("department"),    
+            rs.getString("designation"),   
             rs.getString("date_of_joining"),// Changed from doj 
             rs.getString("employment_status") // Changed from status 
         );
