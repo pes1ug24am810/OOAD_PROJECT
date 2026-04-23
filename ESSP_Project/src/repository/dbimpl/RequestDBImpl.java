@@ -106,7 +106,7 @@ public class RequestDBImpl implements IRequestRepository {
 
     private Request mapResultSetToRequest(ResultSet rs) throws SQLException {
         Request r = new Request();
-        r.setRequestId(rs.getRow()); // Placeholder if your UI expects an int
+        r.setRequestId(rs.getRow()); // Placeholder if our UI expects an int
         r.setEmployeeId(rs.getInt("emp_id"));       // Matches emp_id column
         r.setRequestType(rs.getString("task_type")); // Matches task_type column
         r.setDescription(rs.getString("task_name")); // Matches task_name column
